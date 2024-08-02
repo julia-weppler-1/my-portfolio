@@ -1,0 +1,76 @@
+/* src/components/AboutMe.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #EDF2FB; /* Set background color */
+}
+
+.about-container {
+    color: #333;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+}
+
+@media (min-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.section {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    box-shadow: 0 0 5px 5px #CCDBFD;
+}
+
+/* 
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  padding: 1.5rem;
+  margin-top: 25px;
+  background: white;
+  color: #48abe0;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer; */
+.section-content {
+    padding: 20px;
+    z-index: 1;
+}
+
+.section h2 {
+    margin-top: 0;
+    color: #023047;
+    font-weight: 700;
+}
+
+.section p {
+    font-size: 1.1rem;
+}
+
+@keyframes glowing {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+    100% { transform: scale(1); }
+}
+
+.profile-picture {
+    width: 30%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    border-radius: 15px;
+}
