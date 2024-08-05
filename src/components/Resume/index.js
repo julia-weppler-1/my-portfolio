@@ -6,10 +6,10 @@ const Resume = () => {
             <h2>Resume</h2>
             <p>View and download my resume:</p>
             <div style={{ width: '100%', height: '800px', overflow: 'auto' }}>
-                <embed src={`${process.env.PUBLIC_URL}/public/Weppler Resume 2025.pdf`} type="application/pdf" width="100%" height="100%" />
+                <embed src={`${process.env.PUBLIC_URL}/public/Weppler-Resume-2025.pdf`} type="application/pdf" width="100%" height="100%" />
             </div>
             <p>
-                <a href="public/Weppler Resume 2025.pdf" download="Weppler Resume 2025.pdf">
+                <a href="public/Weppler-Resume-2025.pdf" download="Weppler-Resume-2025.pdf">
                     Download Resume (PDF)
                 </a>
             </p>
