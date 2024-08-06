@@ -1,4 +1,3 @@
-// src/App.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
@@ -9,14 +8,14 @@ import Projects from './components/Projects';
 import './App.css';
 
 const App = () => (
-    <Router>
+    <Router basename="/my-portfolio">
         <Header />
         <div className="container">
             <Routes>
-                <Route path="/my-portfolio/" element={<About />} />
-                <Route path="/my-portfolio/resume" element={<Resume />} />
-                <Route path="/my-portfolio/coursework" element={<Coursework />} />
-                <Route path="/my-portfolio/projects" element={<Projects />} />
+                <Route path="/" element={<About />} />
+                <Route path="/resume" element={<Resume />} />
+                <Route path="/coursework" element={<Coursework />} />
+                <Route path="/projects" element={<Projects />} />
             </Routes>
         </div>
     </Router>
