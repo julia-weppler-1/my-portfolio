@@ -4,7 +4,7 @@ import './index.css';
 
 const About = () => (
     <div className="about-container">
-        <img src='/my-portfolio/docs/assets/selfie.jpeg' alt="Profile" className="profile-picture" />
+        <img src='/my-portfolio/images/selfie.jpeg' alt="Profile" className="profile-picture" />
         <div className="grid-container">
             <div className="section">
                 <div className="section-content">
