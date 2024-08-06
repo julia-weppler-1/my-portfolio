@@ -14,7 +14,7 @@ const projects = [
         title: 'Scoring Assistant',
         category: 'Work - Independently Contracted',
         description: 'As a Help Desk Technician at Rock Gymnastics, I was asked if there was any way to make the process of scoring gymnasts in Excel quicker and easier. The gym owner was experiencing delays performing rankings on all of the gymnasts by category and level using one larger source file. Thus, I created Scoring Assistant to provide an input Excel file format and accept the filled out results. The program then processes the results and outputs a text file with the rankings for each gymnast for the user to print before reading off the scores. The program was built using Django. It is deployed only during competition season at the request of the client, so below is a display of the product.',
-        image: [{url: `${process.env.PUBLIC_URL}/assets/Scoring-Assistant.png`, description: ''}],
+        image: [{url: `${process.env.PUBLIC_URL}/docs/assets/Scoring-Assistant.png`, description: ''}],
         githubLink: 'https://github.com/julia-weppler-1/ScoringAssistant.git',
         glitchLink: ''
     },
