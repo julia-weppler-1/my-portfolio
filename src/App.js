@@ -13,10 +13,10 @@ const App = () => (
         <Header />
         <div className="container">
             <Routes>
-                <Route path="" element={<About />} />
-                <Route path="/resume" element={<Resume />} />
-                <Route path="/coursework" element={<Coursework />} />
-                <Route path="/projects" element={<Projects />} />
+                <Route path="/my-portfolio/" element={<About />} />
+                <Route path="/my-portfolio/resume" element={<Resume />} />
+                <Route path="/my-portfolio/coursework" element={<Coursework />} />
+                <Route path="/my-portfolio/projects" element={<Projects />} />
             </Routes>
         </div>
     </Router>
