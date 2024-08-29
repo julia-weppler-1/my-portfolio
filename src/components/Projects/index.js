@@ -7,7 +7,7 @@ const projects = [
         category: 'Personal Project',
         description: 'This personal portfolio website was built with React to showcase my projects, skills, and resume.',
         image: [],
-        githubLink: 'https://github.com/yourusername/portfolio',
+        githubLink: 'https://github.com/julia-weppler-1/my-portfolio',
         glitchLink: ''
     },
     {
@@ -35,7 +35,7 @@ const projects = [
             {url: `${process.env.PUBLIC_URL}/data-dash-bars-unfiltered.png`, description: 'Underneath is the graphs that the user selected, with a distinction of the source (survey questions versus characteristics). None of the graphs have been filtered yet. The user can also toggle between 3 graph types for each visual.'},
             {url: `${process.env.PUBLIC_URL}/data-dash-customize-view.png`, description: ''}, 
             {url: `${process.env.PUBLIC_URL}/data-dash-1-filter.png`, description: 'Here is the same dashboard when a user clicks a bar to filter across all data with that response:'}, 
-            {url: `${process.env.PUBLIC_URL}/data-dash-multiple-filters-tooltip.png`, description: 'And again filtering using AND with another response. You can also see that each element imn a graph has a tooltip for more precise information:'}],
+            {url: `${process.env.PUBLIC_URL}/data-dash-multiple-filters-tooltip.png`, description: 'And again filtering using AND with another response. You can also see that each element in a graph has a tooltip for more precise information:'}],
         githubLink: 'https://github.com/julia-weppler-1/data-viz-dashboard.git',
         glitchLink: ''
     },
