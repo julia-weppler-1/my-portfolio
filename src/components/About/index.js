@@ -21,8 +21,8 @@ const About= () => {
                 </p>
                 <br></br>
                 <p>
-                    As I continued advanced studies in Computer Science and applied my knowledge in professional settings, I
-                    found myself repetitively  “How will this be interacted with and understood?” I am excited to
+                    As I continued advanced studies in Computer Science at BC and applied my knowledge in professional settings, I
+                    found myself repetitively asking “How will this be interacted with and understood?” I am excited to
                     leverage my curiosity and technical background to continue investigating ways to make
                     human-computer interactions and relationships more cohesive upon completion of my degree. Specifically, I’m interested in
                     exploring the ways in which we facilitate access to powerful computing tools, such as Big Data
