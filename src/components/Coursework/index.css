@@ -1,3 +1,17 @@
+@media only screen and (max-width: 800px) {
+    .coursework-title {
+      font-size: var(--section-heading-size-mobile) !important;
+    }
+  }
+.coursework-title {
+    font-size: var(--section-heading-size);
+    letter-spacing: var(--heading-letter-spacing);
+    color:white;
+    margin-bottom: 1rem;
+  }
+  .coursework-title > span {
+    color: var(--section-color);
+  }
 .course-list {
     list-style-type: none;
     padding: 0;
@@ -10,16 +24,16 @@
     margin-bottom: 20px;
     position: relative;
     overflow: hidden;
-    background: #f7f9fc;
 }
 
 .course-item h3 {
     margin-top: 0;
-    color: #333;
+    color: #ffff;
 }
 
 .course-item p {
     margin: 5px 0;
+    color: #ffff;
 }
 
 .course-item::before {
@@ -29,7 +43,6 @@
     left: -2px;
     right: -2px;
     bottom: -2px;
-    background: linear-gradient(145deg, #EDF2FB, #E2EAFC, #D7E3FC, #CCDBFD, #C1D3FE, #B6CCFE, #ABC4FF);
     z-index: -1;
     border-radius: 15px;
     opacity: 0.8;

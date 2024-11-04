@@ -50,8 +50,8 @@ const Coursework = () => {
     ];
 
     return (
-        <div className="coursework-container">
-            <h2>Relevant Coursework</h2>
+        <div>
+            <div className="coursework-title">cour<span>sework</span></div>
             <ul className="course-list">
                 {courses.map((course, index) => (
                     <li key={index} className="course-item">

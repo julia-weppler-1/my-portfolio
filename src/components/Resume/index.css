@@ -1,4 +1,51 @@
-.resume-container {
-    margin-left: 3%;
-    margin-right: 3%;
+
+@media only screen and (max-width: 800px) {
+    .resume-header {
+      font-size: var(--section-heading-size-mobile) !important;
+    }
+  }
+  
+  .resume-container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .resume-header {
+    font-size: var(--section-heading-size);
+    letter-spacing: var(--heading-letter-spacing);
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  .resume-header > span {
+    color: var(--section-color);
+  }
+  
+.download-button{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
+.download-button a {
+    color:  white;
+    font-weight: 1rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.download-button a:hover {
+    color:  #9b61ff;
+}
+
+.pdf-viewer {
+    width: 40rem;
+    height: 55rem;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+

@@ -1,76 +1,61 @@
-/* src/components/AboutMe.css */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    background-color: #EDF2FB; /* Set background color */
+@media only screen and (max-width: 800px) {
+  .about-info {
+    flex-direction: column;
+  }
+  .about-header {
+    font-size: var(--section-heading-size-mobile) !important;
+  }
+  .about-left,
+  .about-right {
+    width: 100% !important;
+  }
+  .about-left {
+    margin-bottom: 50px;
+  }
 }
 
 .about-container {
-    color: #333;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 40px;
+.about-header {
+  font-size: var(--section-heading-size);
+  letter-spacing: var(--heading-letter-spacing);
 }
 
-@media (min-width: 768px) {
-    .grid-container {
-        grid-template-columns: 1fr 1fr;
-    }
+.about-header > span {
+  color: var(--section-color);
 }
 
-.section {
-    position: relative;
-    border-radius: 15px;
-    overflow: hidden;
-    display: flex;
-    box-shadow: 0 0 5px 5px #CCDBFD;
+.about-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
 }
 
-/* 
-  justify-content: center;
-  align-items: center;
-  width: 180px;
-  padding: 1.5rem;
-  margin-top: 25px;
-  background: white;
-  color: #48abe0;
-  text-align: center;
-  border-radius: 5px;
-  cursor: pointer; */
-.section-content {
-    padding: 20px;
-    z-index: 1;
+.about-left {
+  width: 50%;
+  font-size: 1.1rem;
 }
 
-.section h2 {
-    margin-top: 0;
-    color: #023047;
-    font-weight: 700;
+.about-right {
+  width: 40%;
+  font-weight: 400;
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  color: var(--section-grey-color);
 }
 
-.section p {
-    font-size: 1.1rem;
+.about-right > p {
+  margin-bottom: 20px;
 }
 
-@keyframes glowing {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.02); }
-    100% { transform: scale(1); }
-}
-
-.profile-picture {
-    width: 30%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 30px;
-    border-radius: 15px;
+.about-right > p > span {
+  color: white;
+  font-weight: 700;
 }
