@@ -7,12 +7,12 @@ const Resume = () => {
         <div className="resume-header">res<span>ume</span></div>
         <div className="resume-container">
             <div className="download-button">
-                <a href={`${process.env.PUBLIC_URL}/Weppler-Resume-2025.pdf`} download="Weppler-Resume-2025.pdf">
+                <a href={`${process.env.PUBLIC_URL}/Weppler Resume 25-26.pdf`} download="Weppler-Resume-2025.pdf">
                     Download Resume (PDF)
                 </a>
             </div>
             <div className="pdf-viewer">
-                <embed src={`${process.env.PUBLIC_URL}/Weppler-Resume-2025.pdf`} type="application/pdf" width="100%" height="100%" />
+                <embed src={`${process.env.PUBLIC_URL}/Weppler Resume 25-26.pdf`} type="application/pdf" width="100%" height="100%" />
             </div>
         </div>
         </div>
