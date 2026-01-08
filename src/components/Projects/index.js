@@ -3,6 +3,19 @@ import './index.css';
 
 const projects = [
   {
+    title: 'Fair Fossil Fuel Extraction Phasout Calculator (F3-EPO)',
+    category: 'Stockholm Environment Institute',
+    description: "I built F3-EPO as part of my internship for the Stockholm Environment Institute. The frontend was created using React and D3, and the backend was created using a LAMP stack + R script for the calculations. To learn more about the report behind the dashboard, click ",
+    image: [],
+    video: {
+      url: `${process.env.PUBLIC_URL}/F3-EPO-DEMO.web.mp4`,
+      caption: 'Short demo walk-through, as the site is still in beta.',      
+    },
+    githubLink: '',
+    reportLink: 'https://www.equityreview.org/extraction-equity-2023',
+    glitchLink: '',
+  },
+  {
     title: 'Personal Portfolio Website',
     category: 'Personal Project',
     description:
@@ -227,6 +240,39 @@ function useSwipe(onLeft, onRight) {
   return { onTouchStart, onTouchMove, onTouchEnd };
 }
 
+
+function VideoFrame({ video, title }) {
+  if (!video?.url) return null;
+
+  const st = {
+    wrap: {
+      background: '#0b0b0c',
+      borderRadius: 16,
+      padding: 16,
+      boxShadow: '0 10px 30px rgba(0,0,0,.35)',
+    },
+    video: { width: '100%', borderRadius: 12, display: 'block', background: '#0f1115' },
+    caption: { marginTop: 10, fontSize: 14, color: '#94a3b8', lineHeight: 1.45 },
+  };
+
+  return (
+    <div style={st.wrap}>
+      <video
+        style={st.video}
+        controls
+        preload="metadata"
+        poster={video.poster}
+        aria-label={`${title || 'Project'} demo video`}
+      >
+        <source src={video.url} type={video.type || 'video/mp4'} />
+        Sorry — your browser doesn’t support embedded videos.
+      </video>
+
+      {video.caption && <div style={st.caption}>{video.caption}</div>}
+    </div>
+  );
+}
+
 function ImageCarousel({ images, title }) {
   const slides = useMemo(() => (images || []).filter(Boolean), [images]);
   const [index, setIndex] = useState(0);
@@ -361,7 +407,19 @@ const Projects = () => {
           <div key={index} className="project-section">
             <h2 className="project-title">{project.title}</h2>
             <h3 className="project-category">{project.category}</h3>
-            <p className="project-description">{project.description}</p>
+            <p className="project-description">
+              {project.description}
+              {project.reportLink && (
+                <a
+                  href={project.reportLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ marginLeft: 4, color: '#9b61ff' }}
+                >
+                  here
+                </a>
+              )}
+            </p>
 
             <div className="project-links">
               {project.githubLink && (
@@ -380,7 +438,11 @@ const Projects = () => {
                 </a>
               )}
             </div>
-
+            {project.video?.url && (
+              <div className="project-images">
+                <VideoFrame video={project.video} title={project.title} />
+              </div>
+            )}
             {!!project.image.length && (
               <div className="project-images">
                 <ImageCarousel images={project.image} title={project.title} />
