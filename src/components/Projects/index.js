@@ -38,6 +38,53 @@ const projects = [
     githubLink: 'https://github.com/julia-weppler-1/my-portfolio',
     glitchLink: '',
   },
+    {
+    title: 'Excel Add-in for Policy Research Database',
+    category: 'Stockholm Environment Institute | Climate Policy Group',
+    description: "As part of my internship at SEI, I modernized a large research database previously maintained in a shared Excel workbook by migrating it to an Azure SQL backend with a hybrid relational/EAV schema, enabling capabilities beyond Excel and improving cloud-based storage and synchronization. I then built a custom Excel Add-In for internal use at SEI that runs SQL queries to retrieve and update records directly from Excel, with version tracking to help resolve changes and prevent data loss.",
+    image: [
+      {
+        url: `${process.env.PUBLIC_URL}/excel-login.png`,
+        description:
+        "Users are prompted to login after opening the add-in, which must be enabled on the user's computer by the system admin."
+      },
+      {
+        url: `${process.env.PUBLIC_URL}/excel-login-2.png`,
+        description:
+        "Login is facilitated through Microsoft Authentication Library, and user role (read-only, read/write, custom SQL query access) is determined by the user's assigned role in Azure SQL."
+      },
+      {
+        url: `${process.env.PUBLIC_URL}/excel-pull.png`,
+        description:
+        "After login verification, users can pull the desired views directly into their Excel workbook."
+      },
+      { url: `${process.env.PUBLIC_URL}/excel-push.png`, 
+        description: "If a user has write-access, they have the option to push their changes. The program will alert users to verify their intention to push a number of changes to different views." 
+      },
+      {
+        url: `${process.env.PUBLIC_URL}/excel-track-changes.png`,
+        description:
+        "The program also tracks user changes in order to prevent writing over un-pushed changes, or closing the program without pushing. This also helps confirm that the user is operating on the most recent version before pushing data, alerting users of merge conflicts."
+      },
+      {
+        url: `${process.env.PUBLIC_URL}/excel-functions.png`,
+        description:
+        "All Excel functionality is preserved to support research workflows."
+      },
+      {
+        url: `${process.env.PUBLIC_URL}/excel-sharepoint.png`,
+        description:
+        "Documents referenced in the database are automatically linked to the physical document stored in a Sharepoint site using a python script and Microsoft Graph API to enable referencing between the data and the original document."
+      },
+      {
+        url: `${process.env.PUBLIC_URL}/excel-sql.png`,
+        description:
+        "Certain users are granted access to perform custom, read-only queries for deeper analysis."
+      },
+    ],
+    githubLink: '',
+    glitchLink: '',
+  },
   {
     title: 'Data Dashboard',
     category: 'CSCI4911 - Readings in Computer Science',
