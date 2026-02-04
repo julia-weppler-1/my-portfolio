@@ -2,6 +2,20 @@ import React, { useEffect, useMemo, useRef, useState } from 'react';
 import './index.css';
 
 const projects = [
+    {
+    title: '',
+    category: 'Northeastern University | Information Visualization',
+    description: "The goal of this project was to develop a dashboard that provides clinicians with a tool to communicate meaningful information to parents about their interactions during the session. This project was built in in collaboration with factulty from the Northeastern Vis Lab, Bouvé College of Health Sciences, and University of Kansas Medical Center with intended submission to ACM CHI 2027. To learn more about the report behind the dashboard, click ",
+    image: [],
+    video: {
+      url: `${process.env.PUBLIC_URL}/synchro-demo.mp4`,
+      caption: 'A quick overview of the dashboard built with Plotly Dash.',      
+    },
+    githubLink: 'https://github.com/julia-weppler-1/SynchronyVisDashboard',
+    glitchLink: '',
+    reportLink: 'https://julia-weppler-1.github.io/Barry-Weppler-CS7250-Final-Project/',
+    pdfFile: 'Visualizing-Synchrony.pdf', 
+  },
   {
     title: 'Fair Fossil Fuel Extraction Phasout Calculator (F3-EPO)',
     category: 'Stockholm Environment Institute',
@@ -246,10 +260,9 @@ function VideoFrame({ video, title }) {
 
   const st = {
     wrap: {
-      background: '#0b0b0c',
+      background: '#FAF9F6',
       borderRadius: 16,
       padding: 16,
-      boxShadow: '0 10px 30px rgba(0,0,0,.35)',
     },
     video: { width: '100%', borderRadius: 12, display: 'block', background: '#0f1115' },
     caption: { marginTop: 10, fontSize: 14, color: '#94a3b8', lineHeight: 1.45 },
@@ -297,7 +310,7 @@ function ImageCarousel({ images, title }) {
   if (!slides.length) return null;
 
   const st = {
-    wrap: { background: '#0b0b0c', borderRadius: 16, padding: 16, boxShadow: '0 10px 30px rgba(0,0,0,.35)' },
+    wrap: { background: '#FAF9F6', borderRadius: 16, padding: 16},
     viewport: { position: 'relative', overflow: 'hidden', borderRadius: 12 },
     track: {
       display: 'flex',
@@ -308,12 +321,11 @@ function ImageCarousel({ images, title }) {
       WebkitUserDrag: 'none',
       willChange: 'transform',
     },
-    slide: { minWidth: '100%', display: 'grid', placeItems: 'center', background: '#0f1115' },
+    slide: { minWidth: '100%', display: 'grid', placeItems: 'center', background: '#FAF9F6' },
     img: { width: '100%', height: 'auto', objectFit: 'contain', display: 'block' },
     ctrlBtn: {
-      background: 'rgba(0,0,0,.35)',
-      border: '1px solid #a78bfa',
-      color: '#fff',
+      background: '#FAF9F6',
+      color: '#121212',
       padding: '8px 10px',
       borderRadius: 999,
       cursor: 'pointer',
@@ -329,7 +341,7 @@ function ImageCarousel({ images, title }) {
       pointerEvents: 'none',
     },
     captionBar: { display: 'flex', alignItems: 'center', gap: 12, marginTop: 12, flexWrap: 'wrap' },
-    caption: { fontSize: 14, color: '#94a3b8', lineHeight: 1.45, flex: 1 },
+    caption: { fontSize: 14, color: '#12121289', lineHeight: 1.45, flex: 1 },
     dots: { display: 'flex', gap: 6, alignItems: 'center', justifyContent: 'center', marginTop: 10, flexWrap: 'wrap' },
     dot: {
       width: 8,
@@ -372,7 +384,7 @@ function ImageCarousel({ images, title }) {
         <div style={st.caption} aria-live="polite" aria-atomic="true">
           {caption}
         </div>
-        <span style={{ fontSize: 12, color: '#94a3b8' }}>
+        <span style={{ fontSize: 12, color: '#12121289' }}>
           {index + 1} / {slides.length}
         </span>
       </div>

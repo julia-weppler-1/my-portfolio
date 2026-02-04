@@ -30,15 +30,14 @@ const About= () => {
                 </p>
         </div>
         <div className="about-right">
-        <ul>
-                <li><strong>Julia Weppler</strong> </li>
+        <ul style={{ listStyleType: 'none' }}>
                 <li><strong>Email:</strong> jnweppler@gmail.com</li>
                 <li><strong>Location:</strong> Boston, MA</li>
-                <li><strong>B.S. in Computer Science; Minor in Environmental Studies</strong> Boston College (2021-2025)</li>
-                <li><strong>M.S. in Computer Science</strong> Northeastern University (2025-2027)</li>
+                <li><strong>B.S. in Computer Science; Minor in Environmental Studies</strong> Boston College (2021-2025): 3.78/4.0</li>
+                <li><strong>M.S. in Computer Science</strong> Northeastern University (2025-2027): 4.0/4.0</li>
                 <li><strong>Skills:</strong> Python, JavaScript, React, Node JS, D3, Vega, SQL</li>
                 <li><strong>Platforms and Tools:</strong> Esri ArcGIS, Azure Blob, Azure Databricks, Azure SQL, Microsoft Graph, GitHub, Figma, Tableau</li>
-                <li><strong>Awards and Recognitions:</strong> Standout Summer Intern (Optum, 2023); 1st place in Botany at the Jesrsey Shore Science Fair and 3rd place in Botany at the Delaware Valley Regional Science Fair for "The Effects of Ocean Acidification on Rates of Photosynthesis and Overall Health of <em>Zostera marina</em>" (2019)</li>
+                <li><strong>Awards and Recognitions:</strong> Northeastern University Research Apprentice Scholarship Recipient (Spring 2026); Standout Summer Intern (Optum, 2023); 1st place in Botany at the Jesrsey Shore Science Fair and 3rd place in Botany at the Delaware Valley Regional Science Fair for "The Effects of Ocean Acidification on Rates of Photosynthesis and Overall Health of <em>Zostera marina</em>" (2019)</li>
             </ul>
         </div>
       </div>

@@ -10,9 +10,9 @@ const HomePage = () => {
       </div>
       <div className="home-page">
         <div>
-          <span>welcome to my</span>
+          <span>julia</span>
           <p>
-            <span> portfolio</span>
+            <span> weppler</span>
           </p>
         </div>
       </div>

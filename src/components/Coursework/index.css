@@ -6,7 +6,7 @@
 .coursework-title {
     font-size: var(--section-heading-size);
     letter-spacing: var(--heading-letter-spacing);
-    color:white;
+    color:#121212;
     margin-bottom: 1rem;
   }
   .coursework-title > span {
@@ -19,7 +19,7 @@
 
 .course-item {
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #a78bfa55;
     border-radius: 10px;
     margin-bottom: 20px;
     position: relative;
@@ -28,12 +28,12 @@
 
 .course-item h3 {
     margin-top: 0;
-    color: #ffff;
+    color: #121212;
 }
 
 .course-item p {
     margin: 5px 0;
-    color: #ffff;
+    color: #121212;
 }
 
 .course-item::before {

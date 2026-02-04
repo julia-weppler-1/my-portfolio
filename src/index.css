@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #121212;
+  background-color: #FAF9F6;
   width: 100%;
 }
 
@@ -47,7 +47,7 @@ a {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #383838;
+  background: #FAF9F6;
 }
 
 /* Handle */

@@ -6,14 +6,14 @@
   .projects-title {
     font-size: var(--section-heading-size);
     letter-spacing: var(--heading-letter-spacing);
-    color:white;
+    color:#121212;
     margin-bottom: 1rem;
   }
   .projects-title > span {
     color: var(--section-color);
   }
 .projects-container {
-    color: white;
+    color: #121212;
     display: flex;
     flex-direction: column;
   }
@@ -22,7 +22,7 @@
     width: 97%;
     margin-bottom: 2rem;
     position: relative;
-    border-bottom: 2px dotted #ffff;
+    border-bottom: 2px dotted #d5cfbe;
 }
 
 .project-section:last-child {
@@ -67,7 +67,7 @@
 }
 .project-image-description {
     font-style: italic;
-    color: #b7b7b7; 
+    color: #121212; 
 }
 .project-links {
     display: flex;

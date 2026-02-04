@@ -15,7 +15,7 @@
   .resume-header {
     font-size: var(--section-heading-size);
     letter-spacing: var(--heading-letter-spacing);
-    color: white;
+    color: #121212;
     margin-bottom: 1rem;
   }
   

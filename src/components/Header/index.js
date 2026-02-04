@@ -8,9 +8,6 @@ const Header = () => {
   return (
     <div className="navbar-container">
       <div className="navbar-left">
-        <Link to="home" spy={true} smooth={true} duration={500}>
-          julia.weppler
-        </Link>
       </div>
       <div className="navbar-right-menubar">
         {isMenuOpen ? (

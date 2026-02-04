@@ -13,7 +13,7 @@
   }
   
   .navbar-container {
-    color: white;
+    color: #12121289;
     width: 95vw;
     display: flex;
     justify-content: space-between;
@@ -30,7 +30,7 @@
   }
   
   .navbar-right-options {
-    color: var(--section-grey-color);
+    color: #121212;
     width: 40%;
     display: flex;
     justify-content: space-between;
@@ -55,7 +55,7 @@
     right: 0%;
     width: 100vw;
     height: 85vh;
-    background-color: #121212;
+    background-color: #FAF9F6;
     z-index: 1;
   }
   
