@@ -49,3 +49,21 @@
 .btn-back-to-top > svg {
   font-size: 1.2rem;
 }
+/* Reusable section header */
+.section-header {
+  font-size: var(--section-heading-size);
+  letter-spacing: var(--heading-letter-spacing);
+  color: #121212;
+  margin-bottom: 1rem;
+}
+
+.section-header > span {
+  color: var(--section-color);
+}
+
+@media only screen and (max-width: 800px) {
+  .section-header {
+    font-size: 1.5rem !important;
+    margin-bottom: 12px;
+  }
+}

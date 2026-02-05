@@ -5,7 +5,7 @@ import "./index.css";
 const About= () => {
   return (
     <div className="about-container">
-      <div className="about-header">
+      <div className="section-header">
         ab<span>out</span>
       </div>
       <div className="about-info">

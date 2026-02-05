@@ -453,7 +453,7 @@ function ImageCarousel({ images, title }) {
 const Projects = () => {
   return (
     <div className="projects-container">
-      <div className="projects-title">
+      <div className="section-header">
         pro<span>jects</span>
       </div>
 
