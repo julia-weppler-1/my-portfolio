@@ -5,21 +5,21 @@ const projects = [
   {
     title:
       "Visualization Literacy in United States Classrooms: A Qualitative Analysis of State K–12 Learning Standards",
-    category: "Northeastern University | Research Apprenticeship",
+    category: "Northeastern University | Research Apprenticeship | Conditional Acceptance to IEEE VIS 2026",
     description:
-      "I was fortunate to be accepted into Northeastern University's Khoury College Research Apprenticeship Program for the Spring 2026 semester, through which I had the opportunity to work under Dr. Michelle Borkin and Mackenzie Creamer in the Khoury Visualization Lab. Our research explored how visualization literacy — the ability to read and interpret graphical displays of data — is represented in K–12 learning standards across the United States, collecting and analyzing over 5,000 visualization-related standards from all a representative 20 states. I contributed to the qualitative coding and thematic analysis pipeline, helping to identify patterns in the tasks and visual idioms students are expected to learn across grade levels.",
+      "I was fortunate to be accepted into Northeastern University's Khoury College Research Apprenticeship Program for the Spring 2026 semester, through which I had the opportunity to work under Dr. Michelle Borkin and Mackenzie Creamer in the Khoury Visualization Lab. Our research explored how visualization literacy — the ability to read and interpret graphical displays of data — is represented in K–12 learning standards across the United States, collecting and analyzing over 5,000 visualization-related standards from a representative 20 states. I contributed to the qualitative coding and thematic analysis pipeline, helping to identify patterns in the tasks and visual idioms students are expected to learn across grade levels. As of July 2026, this work was conditionally accepted to the IEEE VIS 2026 poster session. The full work will be submitted to ACM CHI 2027.",
     image: [
       {
-        url: `${process.env.PUBLIC_URL}/Weppler_RA_Poster_pic.png`,
+        url: `${process.env.PUBLIC_URL}/IEEE_VisLit_poster.pdf`,
         description:
-          "Research poster presented at the Khoury College of Computer Sciences Research Apprenticeship Symposium, summarizing the methodology, dataset, and preliminary findings from a qualitative analysis of K–12 visualization literacy standards across the United States.",
+          "Research poster submitted to IEEE VIS 2026 poster session, summarizing the methodology, dataset, and preliminary findings from a qualitative analysis of K–12 visualization literacy standards across the United States.",
       },
     ],
     video: {},
     githubLink: "",
     glitchLink: "",
     reportLink: "",
-    pdfFile: "Weppler_RA_Poster.pdf",
+    pdfFile: "IEEE_VisLit_poster_manuscript.pdf",
   },
   {
     title:
@@ -79,7 +79,7 @@ const projects = [
     title: "TRACE: Visualizing Parent-Child Physiological Concordance",
     category: "Northeastern University | Information Visualization",
     description:
-      "The goal of this project was to develop a dashboard that provides clinicians with a tool to communicate meaningful information to parents about their interactions during the session. This project was built in in collaboration with factulty from the Northeastern Vis Lab, Bouvé College of Health Sciences, and University of Kansas Medical Center with intended submission to ACM CHI 2027. To learn more about the report behind the dashboard, click ",
+      "The goal of this project was to develop a dashboard that provides clinicians with a tool to communicate meaningful information to parents about their interactions during recorded interactions between parents and children with autism. This project was built in in collaboration with factulty from the Northeastern Vis Lab, Bouvé College of Health Sciences, and University of Kansas Medical Center with intended submission to EuroVis 2027. To learn more about the report behind the dashboard, click ",
     image: [],
     video: {
       url: `${process.env.PUBLIC_URL}/synchro-demo.mp4`,
@@ -318,6 +318,27 @@ function VideoFrame({ video, title }) {
   );
 }
 
+const isPdf = (url = "") => url.split("?")[0].toLowerCase().endsWith(".pdf");
+
+function PdfSlide({ url, title }) {
+  return (
+    <div className="carousel-pdf-wrap">
+      <object
+        data={`${url}#view=FitH&navpanes=0`}
+        type="application/pdf"
+        className="carousel-pdf"
+        aria-label={`${title || "Document"} — PDF viewer`}
+      >
+        <div className="pdf-fallback">
+          <p>Your browser can’t display this PDF inline.</p>
+          <a href={url} target="_blank" rel="noopener noreferrer">Open the poster in a new tab</a>
+        </div>
+      </object>
+      <a className="pdf-open-link" href={url} target="_blank" rel="noopener noreferrer">Open full size ↗</a>
+    </div>
+  );
+}
+
 function ImageCarousel({ images, title }) {
   const slides = useMemo(() => (images || []).filter(Boolean), [images]);
   const [index, setIndex] = useState(0);
@@ -354,12 +375,16 @@ function ImageCarousel({ images, title }) {
         <div className="carousel-track" style={{ transform }} {...swipe}>
           {slides.map((img, i) => (
             <div key={i} className="carousel-slide">
-              <img
-                src={img.url}
-                alt={`${title || "Slide"} — ${i + 1} of ${slides.length}`}
-                className="carousel-image"
-                draggable={false}
-              />
+              {isPdf(img.url) ? (
+                <PdfSlide url={img.url} title={title} />
+              ) : (
+                <img
+                  src={img.url}
+                  alt={`${title || "Slide"} — ${i + 1} of ${slides.length}`}
+                  className="carousel-image"
+                  draggable={false}
+                />
+              )}
             </div>
           ))}
         </div>
@@ -465,7 +490,7 @@ const Projects = () => {
                 <VideoFrame video={project.video} title={project.title} />
               </div>
             )}
-            {!!project.image.length && (
+            {!!project.image?.length && (
               <div className="project-images">
                 <ImageCarousel images={project.image} title={project.title} />
               </div>

@@ -52,6 +52,13 @@ const Coursework = () => {
         "A capstone course for the Environmental Studies minor, integrating scientific analysis, policy considerations, and sustainability research. Focused on applying data science techniques to environmental forecasting and ecosystem modeling.",
       work: "Completed a senior thesis forecasting the impacts of temperature and pH on areal coverage of eelgrass (Zostera marina) using XGBoost. Developed predictive models to assess ecological vulnerability under future climate scenarios, contributing to sustainable coastal management research.",
     },
+        {
+      code: "ENVS3355",
+      title: "Sustainable Cities",
+      description:
+        "This course surveyed current best practices in urban sustainability and resilience, from watershed restoration and pollution control to waste management, heat island mitigation, transit and infrastructure improvement, and urban agriculture. Through my coursework I considered these efforts alongside environmental justice concerns and examined how cities are preparing for sea level rise, extreme weather, and rising temperatures.",
+      work: "Authored a final report on urban green space and green design strategies for mitigating the urban heat island effect in Chicago, drawing on Singapore's biophilic urbanism initiatives as a case study. Examined interventions including green roofs, vertical greenery systems, expanded tree canopy cover, and permeable surfaces, and assessed their applicability to Chicago's climate and existing policy landscape.",
+    },
   ];
 
   return (
