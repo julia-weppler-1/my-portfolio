@@ -66,6 +66,35 @@ const HomePage = () => {
             systems, spatial data analysis, and what people actually take away
             from the things we build for them.
           </p>
+          <div className="about-details">
+            <div className="detail-block">
+              <h4>skills</h4>
+              <ul className="detail-list">
+                <li>Python, JavaScript, SQL, Java</li>
+                <li>React, D3.js, Plotly Dash, Django</li>
+                <li>PyTorch, scikit-learn, pandas, GeoPandas</li>
+                <li>ArcGIS, Azure SQL, MongoDB, Git</li>
+              </ul>
+            </div>
+
+            <div className="detail-block">
+              <h4>awards</h4>
+              <ul className="detail-list">
+                <li>
+                  Khoury Research Apprenticeship <span>Northeastern, 2026</span>
+                </li>
+                <li>
+                  Standout Summer Intern <span>Optum, 2023</span>
+                </li>
+                <li>
+                  1st & 3rd in Botany{" "}
+                  <span>
+                    Jersey Shore & Delaware Valley Science Fairs, 2019
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
         </section>
       </main>
     </div>
