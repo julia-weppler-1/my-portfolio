@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { Link } from "react-scroll";
 import "./index.css";
@@ -7,8 +6,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <div className="navbar-container">
-      <div className="navbar-left">
-      </div>
+      <div className="navbar-left"></div>
       <div className="navbar-right-menubar">
         {isMenuOpen ? (
           <div className="navbar-menu-options">
@@ -21,15 +19,6 @@ const Header = () => {
               duration={500}
             >
               home
-            </Link>
-            <Link
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              to="about"
-              spy={true}
-              smooth={true}
-              duration={500}
-            >
-              about
             </Link>
             <Link
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -66,9 +55,6 @@ const Header = () => {
       <div className="navbar-right-options">
         <Link to="home" spy={true} smooth={true} duration={500}>
           home
-        </Link>
-        <Link to="about" spy={true} smooth={true} duration={500}>
-          about
         </Link>
         <Link to="projects" spy={true} smooth={true} duration={500}>
           projects
