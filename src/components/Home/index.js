@@ -49,7 +49,7 @@ const HomePage = () => {
             Northeastern University studying Computer Science with a focus in
             HCI and Data Visualization. Before Northeastern, I completed my
             Bachelors of Science at Boston College in Computer Science with a
-            Minor in Environmental Studies, where I worked on coastal resilience
+            Minor in Environmental Studies, where I worked on coastal resilience, sustainable cities,
             and marine conservation alongside machine learning and visualization
             coursework.
           </p>
@@ -61,10 +61,10 @@ const HomePage = () => {
             for catastrophe risk at Liberty Mutual, policy and research tools at
             the Stockholm Environment Institute. A lot of it has been spatial,
             and most of it involved the same challenge, which was getting the
-            results into a form the people who needed them could act on —
-            clinicians, underwriters, planners. I'm interested in visualization
-            systems, spatial data analysis, and what people actually take away
-            from the things we build for them.
+            results into a form the people who needed them could act on, whether it be
+            clinicians, researchers, underwriters, or planners. I'm interested in visualization
+            systems, spatial data analysis, and machine learning for social and environmental impact. 
+            Underneath all of that lies the challenge of understanding what people actually take away from the things we build.
           </p>
           <div className="about-details">
             <div className="detail-block">
