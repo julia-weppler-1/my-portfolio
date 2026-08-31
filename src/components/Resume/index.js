@@ -10,15 +10,15 @@ const Resume = () => {
       <div className="resume-container">
         <div className="download-button">
           <a
-            href={`${process.env.PUBLIC_URL}/Weppler Resume 25-26.pdf`}
-            download="Weppler-Resume-2025.pdf"
+            href={`${process.env.PUBLIC_URL}/Weppler-Resume-Fall-2026.pdf`}
+            download="Weppler-Resume-Fall-2026.pdf"
           >
             Download Resume (PDF)
           </a>
         </div>
         <div className="pdf-viewer">
           <embed
-            src={`${process.env.PUBLIC_URL}/Weppler Resume 25-26.pdf`}
+            src={`${process.env.PUBLIC_URL}/Weppler-Resume-Fall-2026.pdf`}
             type="application/pdf"
             width="100%"
             height="100%"
